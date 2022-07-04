@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Warning":6,"AlumnosTest::testAgregarNumerosComoNombres":4,"AlumnosTest::testString":4,"LoginTest::test_login":4},"times":{"Warning":0.004,"AlumnosTest::testAgregarNumerosComoNombres":0.004,"AlumnosTest::testString":0.004,"LoginTest::test_login":0.004}}
