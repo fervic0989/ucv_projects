@@ -11,8 +11,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
-  }
+  "license": "ISC"
 }
