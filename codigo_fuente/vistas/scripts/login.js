@@ -1,8 +1,8 @@
 $("#frmAcceso").on('submit',function(e)
 {
     e.preventDefault();
-    logina=$("#logina").val();
-    clavea=$("#clavea").val();
+    var logina=$("#logina").val();
+    var clavea=$("#clavea").val();
 
     $.post("../ajax/usuario.php?op=verificar",
         {"logina":logina,"clavea":clavea},
