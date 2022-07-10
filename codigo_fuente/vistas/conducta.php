@@ -9,10 +9,7 @@ if (!isset($_SESSION['nombre'])) {
 require 'header.php';
 if ($_SESSION['grupos']==1) {
 
-   /* if(isset($_GET['idgrupo'])) {
-      $_SESSION['idgrupo'] = $_GET['idgrupo'];
-    };*/
-        $idgrupo=$_GET['idgrupo'];
+    $idgrupo=$_GET['idgrupo'];
 
   require_once "../modelos/Grupos.php";
   $grupos = new Grupos();
