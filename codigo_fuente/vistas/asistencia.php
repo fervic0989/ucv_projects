@@ -9,10 +9,7 @@ if (!isset($_SESSION['nombre'])) {
 require 'header.php';
 if ($_SESSION['grupos']==1) {
 
-   /* if(isset($_GET['idgrupo'])) {
-      $_SESSION['idgrupo'] = $_GET['idgrupo'];
-    };*/
-        $idgrupo=$_GET['idgrupo'];
+    $idgrupo=$_GET['idgrupo'];
 
   require_once "../modelos/Grupos.php";
   $grupos = new Grupos();
@@ -33,13 +30,14 @@ if ($_SESSION['grupos']==1) {
 <div class="box-header with-border">
   <h1 class="box-title">Registro de asistencia <?php echo $nombre_grupo; ?></h1>
   <div class="box-tools pull-right">
-    <a href="../vistas/vista_grupo.php?idgrupo=<?php echo $idgrupo; ?>"><button class="btn btn-success"><i class='fa fa-arrow-circle-left'></i> Volver</button></a>
+    <a href="../vistas/vista_grupo.php?idgrupo=<?php echo $idgrupo; ?>"><button class="btn btn-success"><em class='fa fa-arrow-circle-left'></em> Volver</button></a>
   </div>
 </div>
 <!--box-header-->
 <!--centro-->
 <div class="panel-body table-responsive" id="listadoregistros">
   <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
+    <caption>Tabla de Listado de asistencias</caption>
     <thead>
       <th>Opciones</th>
       <th>Imagen</th>
@@ -97,8 +95,8 @@ if ($_SESSION['grupos']==1) {
 
     </div>
     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <button class="btn btn-primary" type="submit" id="btnGuardar_asis"><i class="fa fa-save"></i>  Guardar</button>
-      <button class="btn btn-danger pull-right" data-dismiss="modal" type="button"><i class="fa fa-arrow-circle-left"></i> Cancelar</button>
+      <button class="btn btn-primary" type="submit" id="btnGuardar_asis"><em class="fa fa-save"></em>  Guardar</button>
+      <button class="btn btn-danger pull-right" data-dismiss="modal" type="button"><em class="fa fa-arrow-circle-left"></em> Cancelar</button>
 
     </div>
         </form>

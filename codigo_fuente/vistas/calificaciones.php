@@ -23,7 +23,7 @@ if ($_SESSION['grupos']==1) {
 <div class="box-header with-border">
   <h1 class="box-title">Seleciona una materia</h1>
   <div class="box-tools pull-right">
-        <a href="../vistas/vista_grupo.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><button class="btn btn-success"><i class='fa fa-arrow-circle-left'></i> Volver</button></a>
+        <a href="../vistas/vista_grupo.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><button class="btn btn-success"><em class='fa fa-arrow-circle-left'></em> Volver</button></a>
         <input type="hidden" id="idgrupo" name="idgrupo" value="<?php echo $_GET["idgrupo"];?>">
   </div>
 </div>
@@ -41,6 +41,7 @@ if ($_SESSION['grupos']==1) {
 
 <div class="panel-body table-responsive" id="listadoregistros">
   <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
+    <caption>Tabla de Listado de las calificaciones</caption>
     <thead>
       <th>Opciones</th>
       <th>Imagen</th>
@@ -92,8 +93,8 @@ if ($_SESSION['grupos']==1) {
 
     </div>
     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i>  Guardar</button>
-      <button class="btn btn-danger pull-right" data-dismiss="modal" type="button"><i class="fa fa-arrow-circle-left"></i> Cancelar</button>
+      <button class="btn btn-primary" type="submit" id="btnGuardar"><em class="fa fa-save"></em>  Guardar</button>
+      <button class="btn btn-danger pull-right" data-dismiss="modal" type="button"><em class="fa fa-arrow-circle-left"></em> Cancelar</button>
 
     </div>
         </form>
